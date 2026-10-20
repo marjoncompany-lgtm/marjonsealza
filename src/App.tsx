@@ -254,7 +254,6 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedVlog, setSelectedVlog] = useState<Vlog | null>(null);
-  const [profileView, setProfileView] = useState<'fb' | 'grad'>('fb');
 
   // Contact Form State for LIFE
   const [contactState, setContactState] = useState({ name: '', email: '', projectType: 'Full-Stack Development', message: '' });
