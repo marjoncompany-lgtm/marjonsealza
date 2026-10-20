@@ -1,0 +1,8 @@
+{
+  "name": "Marjon Sealza - Portfolio & Cloud Storage Hub",
+  "description": "Full-stack developer portfolio and Google Drive cloud storage asset manager for Marjon Sealza featuring interactive project showcases, skills matrix, and asset synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

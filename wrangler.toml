@@ -1,0 +1,14 @@
+name = "marjonsealza-paymongo"
+main = "worker/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+APP_BASE_URL = "https://marjonsealza.life"
+PAYMONGO_MODE = "test"
+PAYMONGO_PAYMENT_METHODS = "gcash,qrph,card"
+
+[[d1_databases]]
+binding = "PAYMENTS_DB"
+database_name = "marjonsealza-payments"
+database_id = "4f16fddd-9145-4a7f-b8a1-f05425c5f0f6"
+migrations_dir = "migrations"

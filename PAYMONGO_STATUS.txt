@@ -1,0 +1,5 @@
+PAYMONGO STATUS — SOURCE PREPARED, INTEGRATION DEFERRED
+
+The standalone source module is in ./paymongo-module/.
+Do not deploy or wire it into the storefront until explicitly requested.
+The official production site and Worker have not been changed by preparing this archive.

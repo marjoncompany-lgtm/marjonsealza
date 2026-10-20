@@ -1,0 +1,33 @@
+{
+  "name": "marjon-sealza-life-store",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host=0.0.0.0 --port=3000",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "dev:worker": "wrangler dev --config wrangler.toml",
+    "deploy:worker": "wrangler deploy --config wrangler.toml",
+    "db:migrate:local": "wrangler d1 migrations apply marjonsealza-payments --local --config wrangler.toml",
+    "db:migrate:remote": "wrangler d1 migrations apply marjonsealza-payments --remote --config wrangler.toml",
+    "test": "node --test",
+    "preflight": "node scripts/preflight.mjs",
+    "db:inspect:remote": "wrangler d1 execute marjonsealza-payments --remote --command \"SELECT name, sql FROM sqlite_master WHERE type IN ('table','index') ORDER BY type,name\" --config wrangler.toml",
+    "production:health": "node scripts/check-production-health.mjs",
+    "lint": "tsc -b"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0",
+    "esbuild": "^0.28.2"
+  }
+}

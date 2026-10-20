@@ -1,0 +1,7 @@
+# Local Worker secrets. Copy to .dev.vars and use PayMongo TEST credentials only.
+PAYMONGO_SECRET_KEY=sk_test_REPLACE_ME
+PAYMONGO_WEBHOOK_SECRET=whsk_REPLACE_ME
+ADMIN_API_TOKEN=REPLACE_WITH_LONG_RANDOM_SECRET
+APP_BASE_URL=http://localhost:5173
+PAYMONGO_MODE=test
+PAYMONGO_PAYMENT_METHODS=gcash,qrph,card
